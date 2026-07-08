@@ -61,11 +61,6 @@ processResources {
     }
 }
 
-shadowJar {
-    archiveClassifier.set('')
-    relocate 'com.github.Anon8281.universalScheduler', 'com.tendoarisu.anti4D4V.libs.universalScheduler'
-}
-
 tasks.named("build") {
     dependsOn(tasks.named("shadowJar"))
 }
