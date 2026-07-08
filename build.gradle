@@ -8,6 +8,12 @@ group = 'com.tendoarisu'
 version = '1.2'
 
 repositories {
+    maven {
+        url 'https://maven.aliyun.com/repository/public/'
+    }
+    maven {
+        url 'https://maven.aliyun.com/repository/central'
+    }
     mavenCentral()
     maven {
         name = "papermc"
@@ -59,6 +65,11 @@ processResources {
     filesMatching('plugin.yml') {
         expand props
     }
+}
+
+shadowJar {
+    archiveClassifier.set('')
+    relocate 'com.github.Anon8281.universalScheduler', 'com.tendoarisu.anti4D4V.libs.universalScheduler'
 }
 
 tasks.named("build") {
