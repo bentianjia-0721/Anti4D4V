@@ -44,8 +44,8 @@ messages:
 ### 命令
 
 - `/anti4d4v reload` - 重载配置文件
-- `/anti4d4v blacklist add <正则表达式>` - 添加聊天黑名单
-- `/anti4d4v blacklist remove <正则表达式>` - 移除聊天黑名单
+- `/anti4d4v blacklist add <关键词>` - 添加聊天黑名单
+- `/anti4d4v blacklist remove <关键词>` - 移除聊天黑名单
 - `/anti4d4v blacklist list` - 列出所有聊天黑名单
 - `/anti4d4v action <BAN_IP|BAN|KICK>` - 更改处罚措施
 - `/anti4d4v packetloss <add|remove|list> [玩家]` - 管理丢包模式
